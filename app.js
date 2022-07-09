@@ -162,9 +162,10 @@ function calcCircumference(radius) {
 
 }
 var radius = +prompt("Enter Radius");
-calcCircumference(radius);
+
 function calcArea(radius) {
     var area = Math.PI * radius * radius;
     alert("Area Of Circle=" + area);
 }
+calcCircumference(radius);
 calcArea(radius);
