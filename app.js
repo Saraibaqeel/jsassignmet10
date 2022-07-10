@@ -73,14 +73,15 @@ count();
 function calculateHyp() {
     var base = +prompt("Enter Base");
     var per = +prompt("Enter Perpendicular");
-    var hyp = base + per;
+    var hyp = base*base + per*per;
     function calculateSquare() {
-        hyp = hyp * hyp;
+        hyp = Math.sqrt(hyp);
     }
     calculateSquare();
     alert("Hypotneous=" + hyp);
 }
 calculateHyp();
+
 //Q9(i)
 function area(a, b) {
     return a * b
